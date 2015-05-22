@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Testing visualize </title>
+
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+	</head>
+
+	<body>
+
+		<select id="selected-resource" disabled="true" name="report">
+			<option value="/Samples/Reports/01._Geographic_Results_by_Segment_Report">1._Geographic_Results_by_Segment_Report</option>
+			<option value="/Samples/Reports/02._Sales_Mix_by_Demographic_Report">2_Sales_Mix_by_Demographic_Report</option>
+			<option value="/Samples/Reports/03._Store_Segment_Performance_Report">3_Store_Segment_Performance_Report</option>
+			<option value="/Samples/Reports/04._Product_Results_by_Store_Type_Report">04._Product_Results_by_Store_Type_Report</option>
+			<option value="/Samples/Reports/AllAccounts">AllAccounts</option>
+			<option value="/Samples/Reports/5g.AccountsReport">5g.AccountsReport</option>
+			<option value="/Samples/Reports/06g.ProfitDetailReport">06g.ProfitDetailReport</option>
+			<option value="/Samples/Reports/ProfitDetailReport">ProfitDetailReport</option>
+			<option value="/Samples/Reports/07g.RevenueDetailReport">07g.RevenueDetailReport</option>
+			<option selected="selected" value="/Samples/Reports/RevenueDetailReport">RevenueDetailReport</option>
+			<option value="/Samples/Reports/08g.UnitSalesDetailReport">08g.UnitSalesDetailReport</option>
+			<option value="/Samples/Reports/08.UnitSalesDetailReport">08.UnitSalesDetailReport</option>
+			<option value="/Samples/Reports/9.CustomerDetailReport">9.CustomerDetailReport</option>
+			<option value="/Samples/Reports/9g.CustomerDetailReport">9g.CustomerDetailReport</option>
+			<option value="/Samples/Reports/10g.PerformanceByStoreType">10g.PerformanceByStoreType</option>
+			<option value="/Samples/Reports/State_Performance">State_Performance</option>
+			<option value="/Samples/Reports/11g.SalesByMonthReport">11g.SalesByMonthReport</option>
+			<option value="/Samples/Reports/SalesByMonthReport">SalesByMonthReport</option>
+			<option value="/Samples/Reports/12g.PromotionDetailsReport">/Samples/Reports/12g.PromotionDetailsReport</option>
+			<option value="/Samples/Reports/PromotionDetailsReport">PromotionDetailsReport</option>
+			<option value="/Samples/Reports/13g.TopFivesReport">13g.TopFivesReport</option>
+			<option value="/Samples/Reports/14.PerformanceSummary">14.PerformanceSummary (including fusion chart)</option>
+		</select>
+
+		<button class="logout" disabled="true"> Log Out </button>
+
+		<!--Provide container to render your visualization-->
+		<div id="container"></div>
+
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<!--Provide URL to visualize.js-->
+		<script type="text/javascript" src="http://jasperserver.local:8080/jasperserver-pro/client/visualize.js"></script>
+		<script type="text/javascript" src="js/main.js" ></script>
+
+	</body>
+</html>

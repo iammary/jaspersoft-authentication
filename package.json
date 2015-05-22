@@ -1,0 +1,17 @@
+{
+  "name": "proxy",
+  "version": "0.0.0",
+  "description": "",
+  "main": "proxy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "http": "0.0.0",
+    "sys": "0.0.1",
+    "url": "~0.10.3",
+    "crypto": "0.0.3"
+  }
+}
