@@ -1,5 +1,6 @@
 var express = require( 'express' );
 var crypto  = require( 'crypto' );
+var moment  = require( 'moment' );
 
 var server = express();
 server.use( express.static( __dirname + '/public' ) );
@@ -21,5 +22,10 @@ var getToken = function ( credentials ) {
 	return crypted;
 }
 
-var userCredentials = 'u=ara|o=wayuk|r=EXT_ADMIN,EXT_USER';
+var now = moment().format( 'YYYYMMDDHHmmssZZ' );
+var later = moment().add( 1, 'minutes').format( 'YYYYMMDDHHmmssZZ' );
+console.log( now )
+console.log( later )
+
+var userCredentials = 'u=ara|o=wayuk|r=EXT_ADMIN,EXT_USER|exp=' + later;
 console.log( getToken( userCredentials ) );

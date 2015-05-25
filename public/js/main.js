@@ -1,5 +1,5 @@
 // token to be provided by the node server
-var token = encodeURIComponent( "107e47748186b837f4ab5346d9ef34501edcdf4c2f543403b1f295ebc72b2fa15882d8428556ad551cf1a2e95208af0f" );
+var token = encodeURIComponent( "107e47748186b837f4ab5346d9ef34501edcdf4c2f543403b1f295ebc72b2fa1323d14872c5dfdf9421ae8b83d93f82f732ff51e7e81cb3db55b2f18d82f6945" );
 
 console.log( token )
 
